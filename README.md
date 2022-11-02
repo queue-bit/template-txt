@@ -40,7 +40,11 @@ Expects a struct with the following defined:
 | CurrentPage | Excerpt | Excerpt of the current page |
 | CurrentPage | Content | The page content (article body) |
 | CurrentPage | SiteRoot | URL of the site's root |
+| CurrentPage | Analytics | Analytics Code (HTML with script tag) |
 | SiteMetaData | Twitter | URL to Twitter user |
 | SiteMetaData | Github | URL to GitHub user |
 | SiteMetaData | Linkedin | URL to LinkedIn user |
-| n/a | Toc | Table of Contents (HTML) |
+| SiteMetaData | Domain | The domain as defined in the config file |
+| SiteMetaData | Title | The site's title as defined in the config file |
+| - | Toc | Table of Contents (HTML) |
+| - | TopNav | The top navigation (HTML) |
