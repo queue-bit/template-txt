@@ -1,4 +1,4 @@
-{{define "Body"}}
+{{define "Body" -}}
         <!-- Main -->
         <section id="main">
                 <div class="container">                    
@@ -13,18 +13,26 @@
 
                                     <article class="box page-content">
                                         <header>
-                                            <h2>{{.CurrentPage.Title}}</h2>
-                                            <div>{{.CurrentPage.Nav}}</div>
-                                            <p>{{.CurrentPage.Excerpt}}</p>
-                                            <!--<ul class="meta">
-                                                <li class="icon fa-clock">5 days ago</li>
-                                                <li class="icon fa-comments"><a href="#">1,024</a></li>
-                                            </ul>-->
-                                            
+                                            <h2 id = "title">{{.CurrentPage.Title}}</h2>
+                                            <div id ="breadcrumb">
+                                                <ul class="meta">
+                                                {{- if .CurrentPage.Date -}}
+                                                    <li>{{.CurrentPage.Nav}}</li>
+                                                    <li class="icon fa-calendar">{{.CurrentPage.Date}}</li>
+                                                {{- end -}}                                                    
+                                                </ul>    
+                                            </div>
+                                            {{- if .CurrentPage.Intro -}}
+                                                <p style="padding-top: 1em;">{{.CurrentPage.Intro}}</p>                                            
+                                            {{- end -}}
+
                                         </header>
 
                                         <section>
+                                        {{- if .Toc -}}
+                                            <h3>Contents</h3>
                                             {{.Toc}}
+                                        {{- end -}}
                                             {{.CurrentPage.Content}}
                                         </section>
                                     </article>
