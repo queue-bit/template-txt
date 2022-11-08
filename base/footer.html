@@ -12,6 +12,7 @@
                                     <li><a class="icon brands fa-twitter" href="{{.SiteMetaData.Twitter}}"><span class="label">Twitter</span></a></li>
                                     <li><a class="icon brands fa-linkedin-in" href="{{.SiteMetaData.Linkedin}}"><span class="label">LinkedIn</span></a></li>
                                     <li><a class="icon brands fa-github" href="{{.SiteMetaData.Github}}"><span class="label">Github</span></a></li>
+                                    <li><a class="fas fa-envelope" style="text-decoration: none;" href="/contact"><span class="label" style="display:none">Contact Me</span></a></li>
                                 </ul>
                             </section>
 
@@ -42,7 +43,8 @@
     <script src="{{.CurrentPage.SiteRoot}}/assets/js/breakpoints.min.js"></script>
     <script src="{{.CurrentPage.SiteRoot}}/assets/js/util.js"></script>
     <script src="{{.CurrentPage.SiteRoot}}/assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="{{.CurrentPage.SiteRoot}}/assets/js/prism.js"></script>
+
 </body>
 </html>
 {{end}}
