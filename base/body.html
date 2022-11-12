@@ -16,10 +16,10 @@
                                             <h2 id = "title">{{.CurrentPage.Title}}</h2>
                                             <div id ="breadcrumb">
                                                 <ul class="meta">
-                                                {{- if .CurrentPage.Date -}}
                                                     <li>{{.CurrentPage.Nav}}</li>
+                                                    {{- if .CurrentPage.Date -}}
                                                     <li class="icon fa-calendar">{{.CurrentPage.Date}}</li>
-                                                {{- end -}}                                                    
+                                                    {{- end -}}                                                    
                                                 </ul>    
                                             </div>
                                             {{- if .CurrentPage.Intro -}}
