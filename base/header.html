@@ -21,6 +21,7 @@
 		{{if .CurrentPage.Author}}<meta property="article:author" content="{{.CurrentPage.Author}}">{{end}}
 		{{if .CurrentPage.Date}}<meta property="article:published_time" content="{{.CurrentPage.Date}}T00:00:00.000-06:00" />{{end}}
 		{{if .CurrentPage.Tags}}<meta property="article:tag" content="{{.CurrentPage.Tags}}">{{end}}
+		<meta property="og:site_name" content="{{.SiteMetaData.Title}}">
 		<link rel="stylesheet" href="{{.CurrentPage.SiteRoot}}/assets/css/main.css" />
 		<link rel="stylesheet" href="{{.CurrentPage.SiteRoot}}/assets/css/extend.css" />
 		<link rel="stylesheet" href="{{.CurrentPage.SiteRoot}}/assets/css/prism.css" />
