@@ -51,10 +51,12 @@
 					<ul>
 						<li><a href="{{.CurrentPage.SiteRoot}}/index.html">Home</a></li>
 					{{- .TopNav -}}
-					<li><a class="icon brands fa-twitter" href="{{.SiteMetaData.Twitter}}"></a></li>
-					<li><a class="icon brands fa-linkedin-in" href="{{.SiteMetaData.Linkedin}}"></a></li>
-					<li><a class="icon brands fa-github" href="{{.SiteMetaData.Github}}"></a></li>
-					<li><a class="fas fa-envelope" href="/contact" style="line-height: inherit"></a></li>
+					{{if .SiteMetaData.Mastodon}}<li><a class="icon brands fa-mastodon" href="{{.SiteMetaData.Mastodon}}" rel="me"><span class="label" style="display:none">Mastodon</span></a></li>{{end}}
+					{{if .SiteMetaData.Facebook}}<li><a class="icon brands fa-facebook" href="{{.SiteMetaData.Facebook}}" rel="me"><span class="label" style="display:none">Facebook</span></a></li>{{end}}
+					<li><a class="icon brands fa-twitter" href="{{.SiteMetaData.Twitter}}"><span class="label" style="display:none">Twitter</span></a></li>
+					<li><a class="icon brands fa-linkedin-in" href="{{.SiteMetaData.Linkedin}}"><span class="label" style="display:none">LinkedIn</span></a></li>
+					<li><a class="icon brands fa-github" href="{{.SiteMetaData.Github}}"><span class="label" style="display:none">GitHub</span></a></li>
+					<li><a class="fas fa-envelope" href="/contact" style="line-height: inherit"><span class="label" style="display:none">Contact Me</span></a></li>
 				</ul>
 
 				</nav>
