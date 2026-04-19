@@ -11,9 +11,9 @@
                                 <ul class="contact">
                                     {{if .SiteMetaData.Mastodon}}<li><a class="icon brands fa-mastodon" href="{{.SiteMetaData.Mastodon}}" rel="me"><span class="label">Mastodon</span></a></li>{{end}}
                                     {{if .SiteMetaData.Facebook}}<li><a class="icon brands fa-facebook" href="{{.SiteMetaData.Facebook}}" rel="me"><span class="label">Facebook</span></a></li>{{end}}                                                                 
-                                    <li><a class="icon brands fa-twitter" href="{{.SiteMetaData.Twitter}}"><span class="label">Twitter</span></a></li>
-                                    <li><a class="icon brands fa-linkedin-in" href="{{.SiteMetaData.Linkedin}}"><span class="label">LinkedIn</span></a></li>
-                                    <li><a class="icon brands fa-github" href="{{.SiteMetaData.Github}}"><span class="label">Github</span></a></li>
+                                    {{if .SiteMetaData.Twitter}}<li><a class="icon brands fa-twitter" href="{{.SiteMetaData.Twitter}}"><span class="label">Twitter</span></a></li>{{end}}
+                                    {{if .SiteMetaData.Linkedin}}<li><a class="icon brands fa-linkedin-in" href="{{.SiteMetaData.Linkedin}}"><span class="label">LinkedIn</span></a></li>{{end}}
+                                    {{if .SiteMetaData.Github}}<li><a class="icon brands fa-github" href="{{.SiteMetaData.Github}}"><span class="label">Github</span></a></li>{{end}}
                                     <li><a class="fas fa-envelope" style="text-decoration: none;" href="/contact"><span class="label" style="display:none">Contact Me</span></a></li>
                                 </ul>
                             </section>
